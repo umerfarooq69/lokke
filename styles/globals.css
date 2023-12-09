@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #E6EBFC;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0034DD;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0034DD;
+}
+
+.home-car-bg-1 {
+  background-image: url('../public/img/svg/buy-tile.svg');
+  background-size: contain;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+.home-car-bg-2 {
+  background-image: url('../public/img/svg/sell-tile.svg');
+  background-size: contain;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+.home-car-bg-3 {
+  background-image: url('../public/img/svg/people-tile.svg');
+  background-size: contain;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+.connect-bg {
+  background-image: url('../public/img/svg/connect-agent.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Slider */
+
+body .splide:not(.is-overflow) .splide__list {
+  justify-content: center;
+}
+
+body .splide--arrow__custom {
+  background-color: #fff;
+  opacity: 1;
+  box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0.07);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  width: 40px;
+  height: 40px;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 20;
+}
+
+body .splide--arrow__custom.border {
+  border: 1px solid #ECEDF1;
+}
+
+body .splide--arrow__custom.pre-full-out {
+  left: -45px;
+}
+
+body .splide--arrow__custom.next-full-out {
+  right: -45px;
+}
+
+body .splide--arrow__custom.prev--icon {
+  background-image: url('../public/img/svg/right-arrow-slider.svg');
+}
+
+body .splide--arrow__custom.next--icon {
+  background-image: url('../public/img/svg/left-arrow-slider.svg');
+}
+
+body .splide--arrow__custom.pre-full-out-blue {
+  background-image: url('../public/img/svg/arrow-left-white.svg');
+  left: -45px;
+  background-color: #0034DC;
+  border-color: #0034DC;
+}
+
+body .splide--arrow__custom.next-full-out-blue {
+  background-image: url('../public/img/svg/arrow-right-white.svg');
+  right: -45px;
+  background-color: #0034DC;
+  border-color: #0034DC;
+}
+
+body .splide--arrow__custom svg {
+  display: none;
+}
+
+body .showArrowsOnHover .splide__arrow {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+body .showArrowsOnHover:hover .splide__arrow {
+  opacity: 1;
+  transition: opacity 300ms ease-in-out;
+}
