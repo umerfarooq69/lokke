@@ -7,7 +7,6 @@ import { minusCloseIcon, plusOpenIcon } from "../../../static/import-images";
 
 import Head from "./head";
 import List from "./list";
-import CustomRangeSlider from "../range-slider";
 
 const CollaseHeading = ({ label, initValue }) => {
   const [open, setOpen] = useState(initValue);

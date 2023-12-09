@@ -1,10 +1,5 @@
 import { useState } from 'react';
 import Image from 'next/image';
-// import { Splide, SplideSlide } from '@splidejs/react-splide';
-// import '@splidejs/react-splide/css';
-// import '@splidejs/react-splide/css/core';
-
-
 import { Navigation, Scrollbar, EffectCards } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
@@ -14,26 +9,10 @@ import 'swiper/css/scrollbar';
 import 'swiper/css/navigation';
 
 import { leftArrowAgentIcon } from '../../../static/import-images';
-import { defaultSplideIcon, peopleList } from '../../../static/static-strings';
+import { peopleList } from '../../../static/static-strings';
 import PeopleTile from '../people-tile';
 import DefaultModal from '../../elements/modal';
 import PeopleDetails from '../../module/people/people-details';
-
-const options = {
-  arrows: true,
-  autoWidth: true,
-  // type: 'loop',
-  classes: {
-    ...defaultSplideIcon,
-    arrow: `${defaultSplideIcon.arrow} border`,
-    next: `${defaultSplideIcon.next} next-full-out-blue`,
-    prev: `${defaultSplideIcon.prev} pre-full-out-blue`,
-  },
-  gap: '12px',
-  pagination: false,
-  rewind: true,
-  width: '100%',
-};
 
 const AgentSlider = () => {
   const [open, setOpen] = useState(false);
@@ -72,16 +51,6 @@ const AgentSlider = () => {
               </SwiperSlide>)
           }
         </Swiper>
-        {/* <Splide aria-label="My Favorite Images" options={options}>
-          {
-            peopleList.map((item) =>
-              <SplideSlide key={item.label}>
-                <div className="min-w-[255px]">
-                  <PeopleTile data={item} setOpen={setOpen} />
-                </div>
-              </SplideSlide>)
-          }
-        </Splide> */}
       </div>
 
       <DefaultModal open={open} size="max-w-[1156px]" toggle={setOpen}>
