@@ -12,11 +12,13 @@ const Bell = () =>
   </span>;
 
 const NavNotification = () =>
-  <DropDown className="grid rounded-[10px] px-[10px] py-[5px] bg-white absolute right-[-10px] top-[calc(100%+5px)] border border-border-primary min-w-[350px]" label={<Bell />}>
+  <DropDown className="grid rounded-[10px] px-[10px] py-[5px] bg-white absolute right-[-10px] top-[calc(100%+10px)] border border-border-primary min-w-[350px]" label={<Bell />}>
     <div className="min-w-[133px] p-2">
       <div>
-        <SidrbarHeading badge="2" heading="Notification" />
-        <div className="mt-7">
+        <div className="pl-4">
+          <SidrbarHeading badge="2" heading="Notification" />
+        </div>
+        <div className="mt-5">
           <Notification />
         </div>
       </div>

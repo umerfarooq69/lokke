@@ -13,7 +13,7 @@ const TopProperties = () =>
       </div>
     </div>
 
-    <LabelsFilter />
+    <LabelsFilter isProperty />
   </div>;
 
 export default TopProperties;

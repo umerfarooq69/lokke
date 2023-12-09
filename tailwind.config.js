@@ -26,6 +26,7 @@ module.exports = {
         'background-tertiary': '#F2F5FD',
 
         'border-primary': '#ECEDF1',
+        'border-quaternary': '#0034DD',
         'border-secondary': '#3c3c3c',
         'border-tertiary': '#2A2A2A',
 

@@ -11,7 +11,7 @@ const Flag = () =>
   </span>;
 
 const NavFlags = () =>
-  <DropDown className="grid rounded-[10px] px-[10px] py-[5px] bg-white absolute right-[-10px] top-[calc(100%+5px)] border border-border-primary min-w-[100px]" label={<Flag />}>
+  <DropDown className="grid rounded-[10px] px-[10px] py-[5px] bg-white absolute right-[-10px] top-[calc(100%+10px)] border border-border-primary min-w-[100px]" label={<Flag />}>
     <div className="min-w-[133px] p-2">
       {
         flagData.map((item) =>

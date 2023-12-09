@@ -19,7 +19,7 @@ const TopSearch = () => <div className="relative">
 </div>;
 
 const SearchInput = () =>
-  <DropDown buttonClass="w-full block" className="grid rounded-[10px] px-[10px] py-[5px] bg-white absolute right-0 top-[calc(100%+5px)] border border-border-primary min-w-[270px]" label={<TopSearch />}>
+  <DropDown buttonClass="w-full block" className="grid rounded-[10px] px-[10px] py-[5px] bg-white absolute right-0 top-[calc(100%+10px)] border border-border-primary min-w-[270px]" label={<TopSearch />}>
     <SearchDropDownList />
   </DropDown>;
 

@@ -7,7 +7,7 @@ const LandscapeTile = ({ item }) => {
   const routes = useRouter();
 
   return (
-    <div className={`relative min-h-[300px] bg-white border border-border-primary px-[24px] rounded-[20px] ${item.class} p-5`}>
+    <div className={`relative min-h-[300px] bg-white border-[2px] border-border-primary px-[24px] rounded-[20px] hover:border-border-quaternary ${item.class} p-5`}>
       <h4 className="text-[24px] text-text-primary">{item.label}</h4>
       <div className="mt-4">
         <button className="text-text-tertiary text-left" onClick={() => routes.push(item.link)} type="button">

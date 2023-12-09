@@ -56,6 +56,8 @@ export { default as questionIcon } from '../public/img/svg/question.svg';
 export { default as faCheckIcon } from '../public/img/svg/icon-fa-check.svg';
 export { default as barsLightIcon } from '../public/img/svg/bars-light.svg';
 export { default as markerDark } from '../public/img/svg/marker-dark.svg';
+export { default as plusOpenIcon } from '../public/img/svg/plus-open.svg';
+export { default as minusCloseIcon } from '../public/img/svg/minus-close.svg';
 
 // JPG
 export { default as propertyImg1 } from '../public/img/jpg/property-img-1.jpg';

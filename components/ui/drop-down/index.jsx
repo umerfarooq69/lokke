@@ -27,7 +27,12 @@ const DropDown = ({ children, className, label, buttonClass }) => {
 
   return (
     <div className="relative z-20" ref={dropdownRef}>
-      <div className={`cursor-pointer ${buttonClass || ''} leading-[0px]`} onClick={() => setOpen(!open)}>
+      <div className={`cursor-pointer ${buttonClass || ''} leading-[0px]`}
+        onClick={(e) => {
+          e.stopPropagation();
+          setOpen(!open)
+        }}
+      >
         {label}
       </div>
       <div className={open ? className || '' : 'hidden'}>{children}</div>

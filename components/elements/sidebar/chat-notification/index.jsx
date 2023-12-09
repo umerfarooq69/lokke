@@ -5,21 +5,26 @@ import Notification from './notification';
 import Chat from './chat';
 
 const ChatNotificationSidebar = ({ hideTips }) =>
-  <div className="mx-4 grid gap-[48px]">
+  <div className="grid gap-[48px]">
 
     {/* Notification */}
     <div>
-      <SidrbarHeading badge="2" heading="Notification" />
+      <div className="pl-4">
+        <SidrbarHeading badge="2" heading="Notification" />
+      </div>
 
-      <div className="mt-7">
+      <div className="mt-5">
         <Notification />
       </div>
     </div>
 
     {/* Chat */}
     <div>
-      <SidrbarHeading badge="2" heading="Chat" />
-      <div className="mt-7">
+      <div className="pl-4">
+        <SidrbarHeading badge="2" heading="Chat" />
+      </div>
+
+      <div className="mt-5">
         <Chat />
       </div>
     </div>

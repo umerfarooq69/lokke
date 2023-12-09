@@ -12,7 +12,6 @@ const CardSection = () =>
     {/* Right Carousle */}
     <div className="col-span-5">
       <div className="mb-6">
-     
         <AgentSlider />
       </div>
     </div>
