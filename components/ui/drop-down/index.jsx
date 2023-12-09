@@ -4,7 +4,7 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import { useEffect, useRef, useState } from 'react';
 
-const DropDown = ({ children, className, label, buttonClass }) => {
+const DropDown = ({ children, className, label, buttonClass, isOpen }) => {
   const [open, setOpen] = useState(false);
   const dropdownRef = useRef(null); // Create a ref for the dropdown component
 
@@ -24,6 +24,11 @@ const DropDown = ({ children, className, label, buttonClass }) => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
+
+  useEffect(() => {
+    if (isOpen) isOpen(open);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [open])
 
   return (
     <div className="relative z-20" ref={dropdownRef}>

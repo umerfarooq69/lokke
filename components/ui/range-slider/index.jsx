@@ -1,3 +1,3 @@
-const CustomRangeSlider = () => <div>{'Rang Slider'}</div>;
+const CustomRangeSlider = () => <div>{'Rang'}</div>
 
 export default CustomRangeSlider;

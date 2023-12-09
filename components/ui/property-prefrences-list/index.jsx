@@ -28,10 +28,6 @@ const PropertyPrefrences = () =>
     <div className="mb-8">
       <Head />
     </div>
-    {/* 
-    <div>
-      <CustomRangeSlider />
-    </div> */}
 
     <div className="grid gap-8">
       <Collapse className="mt-6" initValue label={<CollaseHeading initValue label="Home Type" />}>
